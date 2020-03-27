@@ -1,0 +1,30 @@
+{% extends base %}
+
+{% block postamble %}
+  <style>
+    h1 {
+      margin: 2em 0 0 0;
+      color: #2e484c;
+      font-family: 'Julius Sans One', sans-serif;
+      font-size: 1.4em;
+      text-transform: uppercase;
+    }
+    p {
+      font: "Libre Baskerville", sans-serif;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+{% endblock %}
+
+{% block contents %}
+  <div>
+    <h1>TableRowHeight - Dynamically sizing DataTable row height to content</h1>
+    <p>This demo uses a callback to size a <code>DataTable</code> row height to the data in a column.</p>
+    <p>Use the selector on the left to see the resizing in action. If the salary range you select 
+		includes salaries of $59,000 or more, heights are resized for a long error message, if you select a 
+		range that's less than $59,000 the row heights will resize to the shorter error messages.</p>
+	<p>There is no way I have found of dynamically resizing each individual row. It's all or nothing.</p>
+  </div>
+  {{ super() }}
+{% endblock %}
