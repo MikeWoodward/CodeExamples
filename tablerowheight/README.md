@@ -3,5 +3,5 @@ Code to show how to dynamically size rows with a DataTable. Based on Gallery exa
 To run the code:
 * Download the code
 * In the console, move to the folder above the folder tablerowheight
-* type bokeh serve --show tablerowheight
-* adjust the salary range to see the row heights dynamically adjust
+* Type: bokeh serve --show tablerowheight
+* Adjust the salary range to see the row heights dynamically adjust
